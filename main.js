@@ -1,18 +1,17 @@
 addEventListener("DOMContentLoaded", (e) =>{
 form=document.querySelector("#form")
-form.addEventListener("submit",(e)=>{
+    form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    let data=Object.fromEntries(new FormData(e.target))
-    let dolares=Number(data.dolares)
-    let pesos=4800
-    let conver=dolares*pesos
-
-    let mytable=document.querySelector("tbody");
-    mytable.insertAdjacentHTML("beforeend",`
-    <tr>
-        <td>${dolares}</td>
-        <td>${conver}</td>
-    </tr>
-    `)
-})
+        let data= Object.fromEntries(new FormData(e.tarjet));
+        let gradosc=document.querySelector("gradosc")
+        let celcius= Number(data.gradosc)
+        let farenheit=(gradosc-32)*5/9
+        let mytable=document.querySelector("tbody");
+        mytable.insertAdjacentHTML("beforeend",`
+        <tr>
+            <td>${celcius}</td>
+            <td>${farenheit}</td>
+        </tr>
+        `)
+    })
 })
