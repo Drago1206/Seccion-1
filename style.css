@@ -1,7 +1,7 @@
 body{
     background-color: rgb(175, 231, 245);
 }
-h1{
+h1,h3,p{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
